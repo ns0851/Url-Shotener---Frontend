@@ -12,7 +12,7 @@ const Navbar = ({ onHomeClick }) => {
   useEffect(() => {
     const checkAuth = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/api/verify", {
+        const res = await axios.get("https://url-shortener-backend-aj7c.onrender.com/api/verify", {
           withCredentials: true,
         });
         console.log(res.data, "sdfisdbfisdhbfisdhbfisdhb");
@@ -26,7 +26,7 @@ const Navbar = ({ onHomeClick }) => {
 
   const Logout = async () => {
     try {
-      await axios.post("http://localhost:3000/api/auth/logout", {}, {
+      await axios.post("https://url-shortener-backend-aj7c.onrender.com/api/auth/logout", {}, {
         withCredentials: true
       });
       setIsLoggedIn(false);

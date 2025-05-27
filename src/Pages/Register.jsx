@@ -25,7 +25,7 @@ const Register = () => {
     setMessage("");
 
     try {
-      await axios.post("http://localhost:3000/api/auth/register", formData, {
+      await axios.post("https://url-shortener-backend-aj7c.onrender.com/api/auth/register", formData, {
         withCredentials: true,
       });
       toast.success("Registered SuccessFully")
