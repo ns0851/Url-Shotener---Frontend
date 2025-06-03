@@ -26,7 +26,7 @@ const ForgotPassword = () => {
 
     try {
   const res = await axios.put(
-    "hhttps://url-shortener-backend-aj7c.onrender.com/api/auth/reset",
+    "https://url-shortener-backend-aj7c.onrender.com/api/auth/reset",
     formData,
     {
       headers: {

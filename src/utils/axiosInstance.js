@@ -1,7 +1,7 @@
 import axios, { isAxiosError } from "axios";
 
 const axiosInstance = axios.create({
-        baseURL: "https://url-shortener-backend-aj7c.onrender.com/",
+        baseURL: "https://url-shortener-backend-aj7c.onrender.com",
         timeout: 10000
 })
 
